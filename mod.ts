@@ -6,13 +6,10 @@ interface factType{
   all: string
 }
 
-import { computerFacts } from "https://raw.githubusercontent.com/Scientific-Guy/factful.deno/master/utils/computer.ts"
-
-import { emojiFacts } from "https://raw.githubusercontent.com/Scientific-Guy/factful.deno/master/utils/emoji.ts"
-
-import { spaceFacts } from "https://raw.githubusercontent.com/Scientific-Guy/factful.deno/master/utils/space.ts"
-
-import { foodFacts } from "https://raw.githubusercontent.com/Scientific-Guy/factful.deno/master/utils/food.ts"
+import { computerFacts } from "./utils/computer.ts"
+import { emojiFacts } from "./utils/emoji.ts"
+import { spaceFacts } from "./utils/space.ts"
+import { foodFacts } from "./utils/food.ts"
 
 function randomize(arr: string[]): string{
   return arr[Math.floor(Math.random() * arr.length)]
@@ -34,4 +31,4 @@ export function facts(): factType{
   }
 }
 
-export const version: string = '0.0.1';
+export const version = '0.0.1';
