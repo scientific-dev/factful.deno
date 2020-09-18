@@ -15,20 +15,20 @@ function randomize(arr: string[]): string{
   return arr[Math.floor(Math.random() * arr.length)]
 }
 
+const allFacts = computerFacts.concat(emojiFacts).concat(spaceFacts).concat(foodFacts)
+
 export function facts(): factType{
-  const allFacts: string[] = [
-    randomize(computerFacts),
-    randomize(emojiFacts),
-    randomize(spaceFacts),
-    randomize(foodFacts)
-  ]
   return{
     all: randomize(allFacts),
-    computer: allFacts[0],
-    emoji: allFacts[1],
-    space: allFacts[2],
-    food: allFacts[3]
+    computer: randomize(computerFacts),
+    emoji: randomize(emojiFacts),
+    space: randomize(spaceFacts),
+    food: randomize(foodFacts)
   }
 }
 
-export const version = '0.0.2';
+export function search(query: string): string[] {
+  return allFacts.filter(x => x.includes(query))
+}
+
+export const version = '0.0.3';
