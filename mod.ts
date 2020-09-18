@@ -28,7 +28,11 @@ export function facts(): factType{
 }
 
 export function search(query: string): string[] {
-  return allFacts.filter(x => x.includes(query))
+  result = []
+  allFacts.forEach(fact => {
+    if(fact.includes(query)) result.push(fact)
+  })
+  return result
 }
 
 export const version = '0.0.3';
