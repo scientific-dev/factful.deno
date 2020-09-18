@@ -85,9 +85,5 @@ export const spaceFacts: string[] = [
   "The center of a comet is called a “nucleus”.",
   "There are 88 recognized star constellations in our night sky.",
   "On average it takes the light only 1.3 seconds to travel from the Moon to Earth.",
-  "As space has no gravity, pens won’t work.",
-  "As space has no gravity, pens won’t work.",
-  "As space has no gravity, pens won’t work.",
-  "As space has no gravity, pens won’t work.",
   "As space has no gravity, pens won’t work."
 ]
