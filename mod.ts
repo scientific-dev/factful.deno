@@ -5,7 +5,7 @@ interface factType{
   space: string,
   all: string
 }
-
+ 
 import { computerFacts } from "./utils/computer.ts"
 import { emojiFacts } from "./utils/emoji.ts"
 import { spaceFacts } from "./utils/space.ts"
