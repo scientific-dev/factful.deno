@@ -1,4 +1,4 @@
-let computerFacts: string = [
+export const computerFacts: string[] = [
   "Per month almost 6000+ viruses are created...",
   "About 90% of the World’s Currency Only Exists on Computers",
   "The First Computer Mouse was Made of Wood",
@@ -19,6 +19,4 @@ let computerFacts: string = [
   "Russia Engineered a Computer That Ran on Water",
   "Disney Fired John Lasseter for Pushing Computer Animation",
   "Mark Zuckerburg, Owner of Facebook once tried to make a AI in social media and things went out of hand, and Facebook shutdown their AI! Search google for more!"
-]
-
-export computerFacts
+];
